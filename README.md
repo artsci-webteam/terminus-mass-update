@@ -22,6 +22,10 @@ terminus self:plugin:install /path/to/terminus-mass-update
 ## Usage
 
 ### Apply Updates
+```bash
+# Apply upstream updates to a single site
+echo "wustl-itartsci" | terminus site:mass-update:apply --accept-upstream
+```
 
 Using organization UUID (recommended for your setup):
 
