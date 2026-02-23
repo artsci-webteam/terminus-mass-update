@@ -15,13 +15,8 @@ A Terminus plugin to apply upstream updates to multiple sites at once, with post
 ## Installation
 
 ```bash
+git clone https://github.com/artsci-webteam/terminus-mass-update.git
 terminus self:plugin:install /path/to/terminus-mass-update
-```
-
-Or from a git repository:
-
-```bash
-terminus self:plugin:install https://github.com/artsci_webteam/terminus-mass-update.git
 ```
 
 ## Usage
@@ -61,8 +56,7 @@ terminus site:mass-update:apply \
 Using STDIN (original behavior):
 
 ```bash
-terminus site:list --format=list | terminus site:mass-update:apply --accept-upstream --updatedb
-terminus org:site:list --format=list | terminus site:mass-update:apply --accept-upstream
+terminus site:list --format=list | terminus site:mass-update:apply --accept-upstream
 ```
 
 ### List Available Updates
